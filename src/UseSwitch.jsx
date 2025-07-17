@@ -1,9 +1,9 @@
 import { useState } from "react";
 export default function UseSwitch(initialValue = false) {
-  const [isOn, SetIsOn] = useState(initialValue);
+  const [isOn, setIsOn] = useState(initialValue);
 
   function toggle() {
-    SetIsOn((prev) => !prev);
+    setIsOn((prev) => !prev);
   }
 
   return [isOn, toggle];
